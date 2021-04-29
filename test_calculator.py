@@ -1,5 +1,9 @@
 import unittest
 import calculator
 
-class testing(unittest.TestCase):
-    pass
+class Testing(unittest.TestCase):
+    def test_addition(self):
+        result = calculator.addition(5, 5)
+        self.assertEqual(result, 10)
+
+    
